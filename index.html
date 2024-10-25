@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add to Cart</title>
+</head>
+<body>
+    <header>
+        <h1>Shopping Mall</h1>
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <h3>Television</h3>
+            <img src="./img/1.jpg" alt="Television">
+            <p>Price: 1110 BIRR</p>
+            <button class="add-to-cart" data-id="1" data-name="Tv" data-price="1110" data-image="./img/1.jpg">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/2.jpg" alt="Laptop">
+            <p>Price: 3440 BIRR</p>
+            <button class="add-to-cart" data-id="2" data-name="Laptop" data-price="3440" data-image="./img/2.jpg">Add to Cart</button>
+        </div>
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/10.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="3" data-name="Laptop" data-price="2440" data-image="./img/10.jpg">Add to Cart</button>
+        </div>
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/3.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="4" data-name="Laptop" data-price="4440" data-image="./img/3.jpg">Add to Cart</button>
+        </div>
+
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/4.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="5" data-name="Laptop" data-price="5440" data-image="./img/4.jpg">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>iPhone</h3>
+            <img src="./img/5.jpg" alt="iPhone">
+            <p>Price: 3110 BIRR</p>
+            <button class="add-to-cart" data-id="6" data-name="iPhone" data-price="3110" data-image="./img/5.jpg">Add to Cart</button>
+        </div>
+
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/6.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="7" data-name="Laptop" data-price="2440" data-image="./img/6.jpg">Add to Cart</button>
+        </div>
+
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/7.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="8" data-name="Laptop" data-price="2440" data-image="./img/7.jpg">Add to Cart</button>
+        </div>
+
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/8.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="9" data-name="Laptop" data-price="2440" data-image="./img/8.jpg">Add to Cart</button>
+        </div>
+
+         <div class="product">
+            <h3>Laptop</h3>
+            <img src="./img/12.jpg" alt="Laptop">
+            <p>Price: 2440 BIRR</p>
+            <button class="add-to-cart" data-id="10" data-name="Laptop" data-price="2440" data-image="./img/12.jpg">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: BIRR <span id="cart-total">0.00</span></p>
+            <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            <button id="close-cart" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="payment-modal">
+        <div class="payment-content">
+            <h2>Payment</h2>
+            <p>Total: BIRR <span id="payment-total">0.00</span></p>
+            
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method">
+                <option value="credit-card">CBE BIRR</option>
+                <option value="paypal">TELE BIRR</option>
+            </select>
+            <button id="pay-btn" class="pay-btn">Pay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
