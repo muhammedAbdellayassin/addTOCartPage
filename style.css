@@ -7,9 +7,11 @@ body {
     margin: 0;
 }
 
+
+
 h1 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #ff7b54;
     text-shadow: 1px 1px 2px #333;
 }
@@ -22,10 +24,15 @@ header {
     padding: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Keeps header and footer in place */
+    top: 0; /* For the header */
+    bottom: 0; /* For the footer */
+    z-index: 1; /* Ensures it stays above other elements */
+    height: 60px;
 }
 
 .cart-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     position: relative;
     padding: 10px;
@@ -110,12 +117,18 @@ button:hover {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+     max-height: 500px; /* Set a maximum height for the cart */
+     overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .cart-content img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+.cart-container {
+  max-height: 300px; /* Set a maximum height for the cart */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .checkout-btn, .pay-btn, .close-btn {
