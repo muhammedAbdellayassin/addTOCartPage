@@ -8,16 +8,27 @@
 </head>
 <body>
     <header>
-
-       <nav>
+<div class="logo">
         <img src="img/logo.jpg" alt="Logo">
-        <ul>
-            <li><a href="">Product</a></li>
-            <li><a href="">Feature</a></li> 
-            <li><a href="">OverView</a></li>
-            <li><a href="">More Products</a></li>
+        
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+     <div class="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
        
         <div class="cart-icon" id="cart-icon">
             🛒 <span id="cart-count">0</span>
