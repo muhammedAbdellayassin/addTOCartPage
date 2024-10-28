@@ -15,62 +15,112 @@ h1 {
     color: #ff7b54;
     text-shadow: 1px 1px 2px #333;
 }
-
-/* Header and Cart Icon */
+/* Basic Navigation Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Keeps header and footer in place */
-    top: 0; /* For the header */
-    bottom: 0; /* For the footer */
-    z-index: 1; /* Ensures it stays above other elements */
-    height: 60px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 5px;
 }
 
- nav {
-            
-            padding: 15px;
-            text-align: center;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-        nav img {
-            height: 50px; /* Adjust height as needed */
-            vertical-align: middle; /* Align with text */
-            margin-right: 20px; /* Space between logo and links */
-            border-radius: 50%;
-            object-fit: cover;
-        }
+.logo img {
+    height: 50px; /* Size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    border: 3px solid #005f73; /* Color and thickness of the outer circle */
+    padding: 5px; /* Space between the logo and the border */
+    background-color: white; /* Background of the circle */
+}
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: inline; /* Display links in a row */
-        }
+nav {
+    display: flex;
+    align-items: center;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
 
-        nav ul li a {
-            color: #dc5a32;;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+nav ul li a {
+    color: #005f73;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-        nav ul li a:hover {
-            background-color: #e1dfdf;
-            border-radius: 20%;
-        }
+nav ul li a:hover {
+    background-color: #e0fbfc;
+}
 
+/* Hamburger Menu for Small Screens */
+.hamburger {
+    display: none; /* Hidden by default, shown on small screens */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Below the header */
+    right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-menu ul {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.nav-menu ul li {
+    padding: 10px 0;
+}
+
+.nav-menu ul li a {
+    color: #005f73;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #e0fbfc;
+}
+
+/* Media Queries for Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+}
 
 
   .cart {
