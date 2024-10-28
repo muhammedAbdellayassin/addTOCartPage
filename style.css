@@ -17,7 +17,19 @@ h1 {
 }
 
 /* Header and Cart Icon */
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Keeps header and footer in place */
+    top: 0; /* For the header */
+    bottom: 0; /* For the footer */
+    z-index: 1; /* Ensures it stays above other elements */
+    height: 60px;
+}
 
 .cart-icon {
     font-size: 1.5rem;
